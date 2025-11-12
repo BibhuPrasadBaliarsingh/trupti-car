@@ -1,0 +1,725 @@
+/********** Template CSS **********/
+:root {
+    --primary: rgb(5, 5, 124);
+    --secondary: #06A3DA;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+body{
+    background-color: #010b16dc;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .85);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Carousel video styling */
+#carousel-video {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+.img1{
+    height: 90vh;
+}
+@media (max-width:670px) {
+ .img1{
+    height: 20vh;
+ }    
+}
+/* Full height for carousel images */
+.full-height {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive carousel for mobile */
+@media (max-width: 768px) {
+    .full-height,
+    #carousel-video {
+        height: 15vh !important;
+    }
+}
+
+/* Responsive carousel for tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .full-height,
+    #carousel-video {
+        height: 15vh !important;
+    }
+    .img1 {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-height,
+    #carousel-video {
+        height: 200px !important;
+    }
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  right: 80%;
+  bottom: 20%;
+  z-index: 10;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 991.98px) {
+    .banner {
+        position: relative;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
+/* Position the Harrier.ev text where the number plate is */
+/* .numberplate-text {
+  position: absolute;
+  bottom: 30%;  
+  left: 40%;    
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.753);
+  color: #00ffcc;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 6px 20px;
+  border-radius: 6px;
+  border: 1.5px solid #00ffcc;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+} */
+
+/* Optional caption text styling */
+
+/* Responsive adjustments */
+/* @media (max-width: 992px) {
+  .numberplate-text {
+    bottom: 30%;
+    font-size: .5rem;
+    padding: 4px 14px;
+  }
+
+} */
+
+/* @media (max-width: 576px) {
+  .numberplate-text {
+    bottom: 30%;
+    font-size: 0.2rem;
+    padding: 3px 10px;
+  }
+} */
+.section-title h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    right: -55px;
+    bottom: 11px;
+    background: var(--primary);
+}
+
+.section-title h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    right: -75px;
+    bottom: 11px;
+    background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+    height: 100%;
+}
+
+.hero-header {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-appointment {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/Trupti/group-image.webp) center center no-repeat;
+    background-size: cover;
+}
+
+.appointment-form {
+    background: rgba(6, 163, 218, .7);
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+    transition: .5s;
+}
+
+.service-item:hover img {
+    transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-radius:100px / 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+    opacity: 1;
+}
+
+.bg-offer {
+    background:url(../img/Trupti/why.avif) center center no-repeat;
+    background-size: cover;
+}
+
+.offer-text {
+    background: rgba(3, 59, 82, 0.75);
+}
+
+.price-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 45px);
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: -22.5px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+}
+
+.price-carousel:hover .owl-nav {
+    opacity: 1;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+
+.testimonial-carousel {
+    
+    border: 10px solid #fff;
+    border-radius: 40px;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 46px);
+    height: 46px;
+    top: calc(50% - 23px);
+    left: -23px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+/* Main Dropdown */
+.main-menu {
+  background-color: #fff;
+  border-radius: 6px;
+  min-width: 220px;
+}
+
+/* Submenu wrapper */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 0px;
+  background: #fff;
+  border-radius: 6px;
+  min-width: 200px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover .submenu {
+  display: block;
+}
+
+/* Styling for items */
+.dropdown-item {
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* For better arrow symbol spacing */
+.dropdown-item::after {
+  float: right;
+}
+.btn-sm-square {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  line-height: 28px;
+}
+
+.btn-sm-square i {
+  font-size: 14px;
+}
+
+.bg-light {
+  background-color: #0a131d !important;
+}
+.btn-sm-square {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  line-height: 28px;
+  color: #ffffff !important; /* make icon white */
+  border-color: #ffffff !important; /* make outline white */
+}
+
+.btn-sm-square:hover {
+  background-color: #ffffff !important; /* white bg on hover */
+  color: #0d6efd !important; /* primary color icon on hover */
+  i{
+  font-size: 14px;
+  color: #000000 !important; /* white icon color */
+}
+
+
+}
+
+.btn-sm-square i {
+  font-size: 14px;
+  color: #ffffff !important; /* white icon color */
+  
+}
+
+
+/* ===== Responsive Topbar Fix ===== */
+.topbar small,
+.topbar a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.topbar i {
+  color: #0d6efd;
+}
+
+.topbar .btn-sm-square {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .topbar .col-lg-8, 
+  .topbar .col-lg-4 {
+    width: 100%;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .topbar small {
+    display: block;
+    margin-bottom: 4px;
+  }
+  .topbar .dropdown {
+    margin-bottom: 6px;
+  }
+  .topbar .btn-sm-square {
+    margin: 0 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Marquee container with enhanced glass effect and 3D depth */
+.glass-marquee {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjustable height */
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass */
+    backdrop-filter: blur(15px) saturate(1.5); /* Enhanced glassmorphism with saturation for vibrancy */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2); /* Inner glow for depth */
+    transform: perspective(1000px) rotateX(5deg); /* Subtle 3D tilt for wow factor */
+    transition: transform 0.5s ease; /* Smooth tilt on hover */
+}
+
+.glass-marquee:hover {
+    transform: perspective(1000px) rotateX(0deg); /* Flatten on hover for interaction */
+}
+
+/* Glowing overlay with enhanced pulse and particle-like effect */
+.glow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.4), transparent),
+        radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.2) 0%, transparent 70%); /* Added cyan particle effect */
+    animation: glowPulse 4s ease-in-out infinite, particleFloat 6s ease-in-out infinite; /* Dual animations for dynamism */
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.5; transform: translateX(-100%) scale(1); }
+    50% { opacity: 1; transform: translateX(0) scale(1.05); } /* Scale for intensity */
+}
+
+@keyframes particleFloat {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; } /* Shifts gradient for floating particles */
+}
+
+/* Marquee track: Flex container with staggered entry for creativity */
+.marquee-track {
+    display: flex;
+    width: calc(200% + 40px); /* Increased gap for breathing room */
+    animation: scrollInfinite 25s linear infinite; /* Slower for elegance, adjustable */
+    will-change: transform;
+    gap: 30px;
+}
+
+.marquee-track .marquee-slide:nth-child(odd) {
+    animation-delay: -2s; /* Stagger slides for a wave-like effect */
+}
+
+/* Pause and reverse on hover for interactivity */
+.glass-marquee:hover .marquee-track {
+    animation-play-state: paused;
+    animation-direction: reverse; /* Reverses on hover for surprise */
+}
+
+@keyframes scrollInfinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Individual slides with neon borders */
+.marquee-slide {
+    display: flex;
+    gap: 30px; /* More space for premium feel */
+    flex-shrink: 0;
+}
+
+/* Images: Fixed to fit without cropping (full image visible) */
+.marquee-slide img {
+    width: 200px; /* Fixed width for consistency */
+    height: 150px; /* Fixed height for consistency */
+    object-fit: contain; /* Shows full image without cutting sides */
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth, bouncy transition */
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(255, 215, 0, 0.3); /* Neon glow */
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1); /* Subtle background if image doesn't fill */
+}
+
+.marquee-slide img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent); /* Subtle reflection */
+    pointer-events: none;
+}
+
+/* Hover effect: Dramatic scale, rotation, and color shift */
+.marquee-slide img:hover {
+    transform: scale(1.2) rotateY(10deg); /* 3D flip for amazement */
+    box-shadow: 
+        0 8px 25px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(0, 255, 255, 0.5); /* Cyan burst */
+    filter: brightness(1.2) contrast(1.1); /* Enhanced vibrancy */
+}
+
+/* Responsive adjustments with more flair */
+@media (max-width: 768px) {
+    .glass-marquee {
+        height: 120px;
+        margin: 10px;
+        transform: perspective(800px) rotateX(3deg); /* Lighter tilt on smaller screens */
+    }
+    .marquee-slide img {
+        width: 150px;
+        height: 100px;
+    }
+    .marquee-track {
+        animation-duration: 18s; /* Balanced speed */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass-marquee {
+        height: 100px;
+        border-radius: 15px;
+    }
+    .marquee-slide img {
+        width: 120px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .marquee-track {
+        gap: 15px;
+        animation-duration: 15s;
+    }
+    .glow-overlay {
+        animation-duration: 3s, 5s; /* Faster on mobile for engagement */
+    }
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}

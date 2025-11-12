@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Trupti Car</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <meta content="Free HTML Templates" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/Trupti/logo.png" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/car.css" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /* Container width fixed to 60vw */
+.container {
+  width: 60vw;
+  margin: 60px auto; /* centers horizontally */
+  max-width: 1200px;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 40px 45px;
+  animation: fadeInUp 0.7s ease;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #051225;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 10px auto 25px;
+  border-radius: 2px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 12px;
+}
+
+h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 18px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 0.96rem;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+ul li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #333;
+  list-style-type: disc;
+}
+
+/* Highlights */
+strong {
+  color: #051225;
+}
+
+/* Links */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #084298;
+  /* text-decoration: underline; */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .container {
+    width: 85vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-body {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95vw;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
+</head>
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary m-1" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-grow text-dark m-1" role="status"><span class="sr-only">Loading...</span></div>
+    <div class="spinner-grow text-secondary m-1" role="status"><span class="sr-only">Loading...</span></div>
+</div>
+<!-- Spinner End -->
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light p-2">
+    <div class="row gx-0 d-flex flex-wrap align-items-center px-3 px-lg-5 topbar"
+        style="background-color: #020b17; color: white; height: auto">
+        <div class="col-lg-8 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-center text-lg-start">
+            <div class="dropdown me-2">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i></small>
+                <a class="dropdown-toggle text-primary text-decoration-none" href="#" id="branchDropdown" data-bs-toggle="dropdown" aria-expanded="false">Trupti Motors</a>
+                <ul class="dropdown-menu" aria-labelledby="branchDropdown">
+                    <li><a style="color: black" class="dropdown-item" href="#Bhubaneswar">Bhubaneswar (Baramunda)</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#Bhubaneswar-patia">Bhubaneswar (Patia)</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#Bhubaneswar-patrapada">Bhubaneswar (Patrapada)</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#khurda">Khordha</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#nayagarh">Nayagarh</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#Paradeep">Paradeep</a></li>
+                    <li><a style="color: black" class="dropdown-item" href="#Kendrapara">Kendrapada</a></li>
+                </ul>
+            </div>
+            <small class="me-3"><i class="fa fa-phone-alt text-primary me-2"></i>+91 7440006252 , +91 8093071567</small>
+            <small class="me-3"><i class="fa fa-envelope-open text-primary me-2"></i>dealer.pcd@truptigroup.co.in</small>
+            <small><i class="fas fa-clock text-primary me-2"></i>Mon-Sat: 9:00 am to 8:00 pm</small>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end mt-2 mt-lg-0">
+            <a class="btn btn-sm btn-outline-primary btn-sm-square rounded-circle me-2" href="https://www.facebook.com/Truptimotors"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm btn-outline-primary btn-sm-square rounded-circle me-2" href="https://www.instagram.com/truptimotors/"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-sm btn-outline-primary btn-sm-square rounded-circle" href="https://x.com/notifications"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+    <a href="index.html" class="navbar-brand p-0" 
+        style="display: flex; align-items: center; height: 100%; overflow: hidden; width: 250px; justify-content: center;">
+        <img src="img/Trupti/logo.png" alt="Trupti Motors" style="height: 70px; width: auto; object-fit: contain; display: block; transform: scale(2.7);" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <div class="nav-item dropdown">
+                <a aria-expanded="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/product" id="productDropdown" role="button">Our Product</a>
+                <div class="dropdown-menu main-menu" aria-labelledby="productDropdown" data-bs-popper="none">
+                    <a class="dropdown-item" href="./product.html">All Product</a>
+                    <div class="dropdown-submenu">
+                        <a href="#" class="dropdown-item">Petrol / Diesel ▸</a>
+                        <div class="dropdown-menu submenu">
+                            <a class="dropdown-item" href="./Tiago.html">Tiago</a>
+                            <a class="dropdown-item" href="./altroz.html">Altroz</a>
+                            <a class="dropdown-item" href="./tigor.html">Tigor</a>
+                            <a class="dropdown-item" href="./punch.html">Punch</a>
+                            <a class="dropdown-item" href="./safari.html">Safari</a>
+                            <a class="dropdown-item" href="./harrier.html">Harrier</a>
+                            <a class="dropdown-item" href="./nexon.html">Nexon</a>
+                            <a class="dropdown-item" href="./curvv.html">Curvv</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a href="#" class="dropdown-item">E-Vehicle ▸</a>
+                        <div class="dropdown-menu submenu">
+                            <a class="dropdown-item" href="./nexon-ev.html">Nexon EV</a>
+                            <a class="dropdown-item" href="./curvv-ev.html">Curvv EV</a>
+                            <a class="dropdown-item" href="./tiago-ev.html">Tiago EV</a>
+                            <a class="dropdown-item" href="./tigor-ev.html">Tigor EV</a>
+                            <a class="dropdown-item" href="./harrier-ev.html">Harrier EV</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a href="#" class="dropdown-item">iCNG ▸</a>
+                        <div class="dropdown-menu submenu">
+                            <a class="dropdown-item" href="./tiago-icng.html">Tiago iCNG</a>
+                            <a class="dropdown-item" href="./tigor-icng.html">Tigor iCNG</a>
+                            <a class="dropdown-item" href="./punch-icng.html">Punch iCNG</a>
+                            <a class="dropdown-item" href="./altroz-icng.html">Altroz iCNG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="modal_parent">
+            <a href="#" class="btn btn-primary py-2 px-4 ms-3 modal_open_button" style="border-radius: 5px">Book Now</a>
+            <!-- Modal code not shown for brevity but assumed present as before -->
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Main Content Start -->
+ <div class="container my-5">
+      <div class="card shadow-lg border-0">
+        <div class="card-body">
+          <h1 class="text-center mb-4">Privacy Statement</h1>
+
+          <p>
+            Protecting your privacy and ensuring that your personal information is held securely is
+            very important to <strong>Trupti Motors</strong> (or “we/our/us” or the “Company”, which
+            includes its divisions, associates, and group companies). This Privacy Policy and Privacy
+            Statement form an integral part of the Terms of Use of our website. We are strongly
+            committed to safeguarding your privacy online and take appropriate technical and
+            organizational measures to protect the personal information provided to us by you. We
+            also take additional measures to comply with the applicable laws regarding the use of
+            personal data obtained from you.
+          </p>
+
+          <p>
+            However, we cannot guarantee the security of any personal data or information you
+            disclose online due to the nature of the Internet. By using our website, you acknowledge
+            the inherent risks of sharing information over the Internet and agree not to hold us
+            responsible for any security breaches unless we have been negligent or in willful
+            default of our duties under applicable law. The Company monitors any breach of security
+            through appropriate controls that alert us in such cases. We may also use encryption
+            technology to help protect any information you submit.
+          </p>
+
+          <h4>Data Privacy Disclaimer</h4>
+          <p>
+            You confirm that you are an Indian resident and shall not access the Website or the
+            goods and services offered on it if you are not an Indian resident.
+          </p>
+
+          <h4>Trupti Motors respects your personal sphere</h4>
+          <p>
+            When processing personal data, we attach great importance to protecting your privacy and
+            ensuring that your data is secure. This privacy policy explains what data we process, why
+            we process it, and how you can object to such processing.
+          </p>
+
+          <p>
+            We collect, process, and store personal data (including IP addresses) only as permitted
+            by law or with your consent, such as when registering for an event, service, or creating
+            an account on our Website.
+          </p>
+
+          <h4>What data do we collect?</h4>
+          <p>
+            We collect various types of information from users of our Website, including name,
+            address, email, phone number, login credentials, financial or banking data, insurance
+            information, geo-location data (if permitted), and transaction details carried out on or
+            through our Website.
+          </p>
+
+          <h4>How do we collect data?</h4>
+          <ul>
+            <li>
+              <strong>Directly from you:</strong> When you provide information on our Website or
+              create an account or interact with Trupti Motors online or offline.
+            </li>
+            <li>
+              <strong>Automatically:</strong> As you navigate through the Website, we collect data
+              using cookies and other tracking technologies.
+            </li>
+          </ul>
+
+          <h4>Do we share your data with third parties?</h4>
+          <p>
+            We share your personal data with third parties only when permitted or authorized by law
+            or when you have given consent — for example, when we share data with service providers
+            for your benefit.
+          </p>
+
+          <h4>How long do we retain your personal data?</h4>
+          <p>
+            We retain your data as long as necessary for our business relationship or legitimate
+            interest. In all other cases, we delete your data unless retention is required by law
+            (e.g., contracts and invoices for 10 years as per legal requirements).
+          </p>
+
+          <h4>What data is processed when you use our Website?</h4>
+          <p>
+            You can visit our Website without providing personal information. Our servers
+            automatically log each visit with technical details such as:
+          </p>
+
+          <ul>
+            <li>IP address of your device</li>
+            <li>GPS location (if permitted)</li>
+            <li>Date and time of access</li>
+            <li>Referring website and search term (if applicable)</li>
+            <li>Accessed file name and URL</li>
+            <li>Search queries used</li>
+            <li>Operating system and browser details</li>
+            <li>Device type (desktop or mobile)</li>
+            <li>Transmission protocol used</li>
+          </ul>
+
+          <p>
+            This data helps us ensure system security, analyze performance, and optimize our online
+            services. IP addresses are also used for Website personalization.
+          </p>
+
+          <h4>Automated Data Collection Technologies</h4>
+          <ul>
+            <li>
+              <strong>Cookies:</strong> Small text files stored on your device to optimize Website
+              usability. You can disable cookies via browser settings, though some functions may not
+              work properly.
+            </li>
+            <li>
+              <strong>Flash Cookies:</strong> Used for storing preferences and navigation data.
+            </li>
+            <li>
+              <strong>Web Beacons:</strong> Tiny graphics in emails or pages that track Website
+              usage analytics.
+            </li>
+          </ul>
+
+          <h4>Social Media and Third-Party Links</h4>
+          <p>
+            Our Website includes links to social networks and third-party platforms (Facebook,
+            Twitter, LinkedIn, etc.). Once you click these links, this Privacy Policy no longer
+            applies — the third party’s privacy policy governs instead.
+          </p>
+
+          <h4>Newsletter</h4>
+          <p>
+            You can subscribe to our newsletter using the “double opt-in” method. If you no longer
+            wish to receive it, you can unsubscribe anytime through email or our Website.
+          </p>
+
+          <h4>Your Rights Regarding Personal Data</h4>
+          <ul>
+            <li>Right to access your stored data</li>
+            <li>Right to correction or deletion</li>
+            <li>Right to revoke consent for data processing</li>
+          </ul>
+          <p>
+            You may exercise these rights by contacting us via email or post. See our contact
+            section for details.
+          </p>
+
+          <h4>Data Security</h4>
+          <p>
+            We employ suitable technical and organizational security measures to protect stored
+            personal data against unauthorized access, loss, or manipulation. Our systems are
+            regularly updated to maintain the highest level of data security.
+          </p>
+
+          <h4>Amendments to This Policy</h4>
+          <p>
+            Trupti Motors reserves the right to amend or supplement this Privacy Policy at any time
+            in accordance with applicable laws. Please check this page regularly for updates.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Main Content End -->
+<!-- Newsletter Start -->
+  <section class="glass-marquee">
+    <div class="glow-overlay"></div>
+    <div class="marquee-track">
+      <div class="marquee-slide">
+        <img src="./img/cars/scrol1.webp" alt="car1">
+        <img src="./img/cars/scrol2.webp" alt="car2">
+        <img src="./img/cars/scrol3" alt="car3">
+        <img src="./img/cars/scrol4.webp" alt="car4">
+        <img src="./img/cars/scrol5" alt="car5">
+        <img src="./img/cars/scrol6" alt="car6">
+        <img src="./img/cars/scrol7" alt="car7">
+        <img src="./img/cars/scrol8" alt="car8">
+        <img src="./img/cars/scrol9" alt="car9">
+      </div>
+      <div class="marquee-slide">
+        <img src="./img/cars/scrol1.webp" alt="">
+        <img src="./img/cars/scrol2.webp" alt="">
+        <img src="./img/cars/scrol3" alt="">
+        <img src="./img/cars/scrol4.webp" alt="">
+        <img src="./img/cars/scrol5" alt="">
+        <img src="./img/cars/scrol6" alt="">
+        <img src="./img/cars/scrol7" alt="">
+        <img src="./img/cars/scrol8" alt="">
+        <img src="./img/cars/scrol9" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Newsletter End -->
+    <div class="modal_parent">
+        <!-- <a href="#" class="btn btn-primary py-2 px-4 ms-3 modal_open_button" style="border-radius: 5px">Book Now</a> -->
+        <div class="modal">
+          <div class="modal-content1">
+            <span class="close">&times;</span>
+            <h1>Book Now</h1>
+            <form action="https://formsubmit.co/dealer.pcd@truptigroup.co.in" method="POST">
+              <div class="mb-1">
+                <label for="name">Name:</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" />
+              </div>
+              <div class="mb-1">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" />
+              </div>
+              <div class="mb-1">
+                <label for="tel">Phone:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" />
+              </div>
+              <div class="mb-1">
+                <label for="adress">Address:</label>
+                <input type="address" class="form-control" id="address" placeholder="Enter Address" name="address" />
+              </div>
+              <div class="mb-1">
+                <label for="adress">Type of Booking:</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                    checked />Sales
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" />Service &
+                  Spare
+                </div>
+              </div>
+              <div class="mb-1">
+                <label for="sel1" class="form-label">Select Car Model</label>
+                <select class="form-select" id="sel1" name="sellist1">
+                  <option>Tiago</option>
+                  <option>Harrier</option>
+                  <option>Altroz</option>
+                  <option>Safari</option>
+                  <option>Nexon</option>
+                  <option>Tigor</option>
+                  <option>Punch</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+<!-- Footer Start (unchanged, as provided) -->
+<div
+      class="container-fluid bg-dark text-light py-5 wow fadeInUp"
+      data-wow-delay="0.3s"
+      style="margin-top: -75px"
+    >
+      <div class="container pt-5">
+        <div class="row g-5 pt-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-footer-widget">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img src="img/Trupti/logo.png" alt="" class="w-50 p-0 m-0"/>
+                </a>
+              </div>
+              <p></p>
+              <div class="footer-contact">
+                <p>
+                  <a
+                    class="email_a"
+                    href="mailto: dealer.pcd@truptigroup.co.in"
+                    style="font-size: 14px"
+                    >dealer.pcd@truptigroup.co.in</a
+                  >
+                </p>
+                <p class="footer_a">Contact Us:</p>
+                <p>
+                  <a class="email_a" href="tel:+91 7440006252"
+                    >+91 7440006252 , +91 8093071567</a
+                  >
+                </p>
+                <p class="footer_a">Open until 08:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">About Trupti</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="service.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Services</a
+              >
+              <a class="text-light mb-2" href="product.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                Product</a
+              >
+              <a class="text-light" href="contact.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                Us</a
+              >
+              <a class="text-light mt-2" href="privacy.html"><i class="bi bi-arrow-right text-primary me-2"></i>Privacy Policy
+</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Top brands</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="Harrier.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Harrier</a
+              >
+              <a class="text-light mb-2" href="Tiago.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Tiago</a
+              >
+              <a class="text-light mb-2" href="Altroz.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Altroz</a
+              >
+              <a class="text-light mb-2" href="punch.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Punch</a
+              >
+              <a class="text-light mb-2" href="safari.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Safari</a
+              >
+              <a class="text-light mb-2" href="Nexon.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Nexon</a
+              >
+              <a class="text-light mb-2" href="Tigor.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Tigor</a
+              >
+              <a class="text-light mb-2" href="curvv.html"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Curvv</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Follow Us</h3>
+            <div class="d-flex">
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                href="https://www.facebook.com/Truptimotors"
+                ><i class="fab fa-facebook-f fw-normal"></i
+              ></a>
+              <!-- <a
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                href="#"
+                ><i class="fab fa-linkedin-in fw-normal"></i
+              ></a> -->
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded"
+                href="https://www.instagram.com/truptimotors/"
+                ><i class="fab fa-instagram fw-normal"></i
+              ></a>
+              <a style="margin-left: 10px;"
+                class="btn  btn-lg btn-primary btn-lg-square rounded"
+                href="https://x.com/notifications"
+                ><i class="fab fa-x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container-fluid text-light py-4" style="background: #051225;">
+  <div class="container">
+      <div class="row g-0">
+          <div class="col-md-12 text-center text-md-start">
+              <p class="text-center">
+                  copyright &copy;2024 Trupti Motors designs: <a href="https://briskodetechnology.com">Briskode Technology PVT.LTD</a>
+                 </p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="lib/twentytwenty/jquery.event.move.js"></script>
+<script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

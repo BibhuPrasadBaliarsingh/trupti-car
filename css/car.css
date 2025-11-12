@@ -1,0 +1,929 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title h5 {
+  color: #fff;
+}
+
+.section-title h1 {
+  color: #2374d8;
+}
+
+/* video */
+
+.video {
+  background-image: url(/img/Trupti/bg-Car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 250px 0px;
+  position: relative;
+}
+
+.video-content {
+  margin-top: -240px;
+}
+
+.video .section-heading h2 {
+  color: #fff;
+}
+
+.video-content .video-frame {
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.video-content .video-frame video {
+  border-radius: 10px;
+  /* width: 540px;
+    height: 340px; */
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.video-content .video-frame a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-26px, -26px);
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 52px;
+  color: #f35525;
+  outline: 15px solid rgba(254, 85, 37, 0.5);
+  font-size: 18px;
+}
+
+
+/* 
+---------------------------------------------
+Fun Facts Style
+--------------------------------------------- 
+*/
+
+.fun-facts {
+  text-align: center;
+  margin-top: 125px;
+}
+
+.fun-facts .counter {
+  background-color: #07428a;
+  position: relative;
+  border-radius: 10px;
+  width: 270px;
+  padding: 20px 0px;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.fun-facts .counter:hover {
+  box-shadow: 0 0 20px 0 rgb(160, 185, 223);
+
+}
+
+.fun-facts .counter h2,
+.fun-facts .counter p {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.fun-facts .counter p {
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.fun-facts .counter h2 {
+  margin-right: 25px;
+  font-size: 40px;
+  color: #0071f8;
+}
+
+
+.car-heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  line-height: 56px;
+  color: #2374d8;
+  text-align: center;
+}
+
+.car-box h4 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: black; /* Darker, richer blue for stronger contrast */
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.25); /* subtle white shadow for clarity */
+  letter-spacing: 0.02em; /* slightly spaced letters for legibility */
+}
+
+
+
+.price-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.price-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.price-item .btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #051a6e 50%, #143784 100%);
+  transition: background 0.3s, color 0.2s;
+  border: none;
+}
+
+.price-item .btn:hover {
+  background: linear-gradient(90deg, #213a85 0%, #2783ca 100%);
+  color: #fff;
+}
+
+.showroom {
+  border-radius: 20px;
+}
+
+.showroom:hover {
+  box-shadow: 0 0 40px 0 rgb(20, 107, 206);
+  border: 2px solid #0071f8;
+}
+
+.showroom img {
+  min-height: 200px;
+}
+
+.footer-contact .email_a {
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-contact .footer_a {
+  color: #1473e6;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.group-title h4 {
+  color: #0071f8;
+}
+
+.group-title p {
+  margin-left: 20px;
+}
+
+
+/* about Page */
+
+.member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 2rem;
+  min-height: 650px;
+}
+
+.member:hover {
+  box-shadow: 0 0 40px 0 gray;
+}
+
+.member .mamber-image img {
+  min-height: 400px;
+  max-height: 420px;
+}
+
+.member .mamber-about .mamber-heading h4 {
+  color: #042144;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.member .mamber-about .mamber-heading p {
+  margin-bottom: 1rem;
+}
+
+.detail-member {
+  margin-top: 3rem;
+}
+
+.detail-member h1 {
+  text-align: center;
+}
+
+.detail-member p {
+  text-align: center;
+  color: #0071f8;
+}
+
+.achivement {
+  margin: 3rem;
+
+}
+
+.achivement .achivment-detail {
+  padding: 0 30px;
+}
+
+@media screen and (max-width:425px) {
+
+  .achivement .achivment-detail {
+    padding: 0;
+  }
+
+}
+
+
+
+.achivement h3 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #0071f8;
+  text-decoration: underline;
+}
+
+.achivement ul li {
+  color: #fff;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+/*--------------------------
+             service page 
+----------------------------------*/
+
+.car1 {
+  background: url(../img/Trupti/car-bg.jpg) left top / 100% 100% no-repeat;
+  width: 100%;
+  height: 100hv;
+  float: left;
+  padding: 70px;
+  margin: 3rem 0
+}
+
+
+.part1 .service-contain {
+  margin-top: 4rem;
+}
+
+.part1 .service-contain h2 {
+  color: #0071f8;
+  margin-bottom: 2rem;
+}
+
+.part1 .service-contain p {
+  color: #fff;
+}
+
+.part3 .service {
+  padding-top: 52px !important;
+  padding-bottom: 52px !important;
+  background-image: url(/assets/images/service/bg-1.png) !important;
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  margin-top: 4rem;
+}
+
+.part3 .service .nav-item .nav-link {
+  color: #ec7424;
+  border-top: 2px solid #ec7424;
+  margin-right: 3rem;
+}
+
+.part3 .service h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.wrapper .bg1 {
+  background: url(../img/Trupti/service1.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .Maintenance1 {
+  background-size: cover;
+  background-position: 100% 0;
+  padding: 50px 35px 29px;
+  box-shadow: inset 0 0 92px rgba(0, 0, 0, .1);
+}
+
+.wrapper .title {
+  min-height: 72px;
+  margin-bottom: 18px;
+  padding-right: 45px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.wrapper .service-price {
+  background-color: #a677e0;
+  display: inline-block;
+  min-width: 108px;
+  margin-bottom: 31px;
+  padding: 12px 5px 11px 14px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.wrapper .price-level {
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.wrapper .price-value {
+  text-indent: -2px;
+  font-size: 24px;
+}
+
+.wrapper .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper .content ul li:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.wrapper .content ul li {
+  position: relative;
+  padding-left: 7px;
+  margin-bottom: 2px;
+  font-size: 13px;
+  color: #000;
+}
+
+.wrapper .bg2 {
+  background: url(../img/Trupti/service2.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .title-color {
+  color: #fff;
+}
+
+.wrapper .service-color {
+  background-color: #d91f20;
+}
+
+.wrapper .content-color ul li {
+  color: #fff;
+}
+
+.wrapper .content-color ul li:before {
+  background-color: #fff;
+}
+
+.wrapper .bg3 {
+  background: url(../img/Trupti/service3.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .service-color1 {
+  background-color: #ec7424;
+}
+
+.wrapper .bg4 {
+  background: url(../img/Trupti/service4.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .service-color2 {
+  background-color: #4c88c1;
+}
+
+.wrapper .bg5 {
+  background: url(../img/Trupti/service5.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .service-color3 {
+  background-color: #ecbf24;
+}
+
+.wrapper .bg6 {
+  background: url(../img/Trupti/service6.jpg);
+  margin-bottom: 3rem;
+}
+
+.wrapper .service-color4 {
+  background-color: #7ac42a;
+}
+
+.tab-content {
+  margin: 4rem 0;
+}
+
+@media screen and (max-width:1199px) {
+  .part1 .about-service {
+    min-height: 250px;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .part1 .about-service {
+    min-height: 300px;
+    min-width: 180px;
+
+  }
+
+  .part1 .service-logo {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .part1 .about-service {
+    min-height: 300px;
+    min-width: 180px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .service .service-content .image-heading {
+    margin-top: 2rem;
+  }
+}
+
+/* tiago */
+
+.tiago {
+  margin: 5rem 0;
+}
+
+.tiago .tiago-contain h2 {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: #0071f8;
+  margin-bottom: 3rem;
+}
+
+.tiago .tiago-contain p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.tiago .tiago-contain button {
+  border: 1px solid #0102fa;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  background-color: #0102fa;
+  color: #fff;
+}
+
+.tiago .tiago-contain .box {
+  background-color: #fff;
+  text-align: center;
+}
+
+.tiago .tiago-contain .start {
+  color: #000;
+  margin-top: 2rem;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.tiago .tiago-contain .rate {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.features .features-heading {
+  padding: 0 3rem;
+}
+
+.features {
+  margin: 4rem 0;
+}
+
+.features img {
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.features .features-heading h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 5rem 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.features .features-heading h3 {
+  font-size: 30px;
+  color: #0102fa;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  font-weight: 700;
+
+}
+
+.features .features-heading p {
+  color: #fff;
+  padding-right: 3rem;
+}
+
+
+/* 
+---------------------------------------------
+Contact Style
+--------------------------------------------- 
+*/
+
+.contact {
+  background-image: url(../img/Trupti/bg-Car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 250px 0px;
+  position: relative;
+}
+
+.contact .section-heading h2 {
+  color: #fff;
+}
+
+.contact-content {
+  margin-top: -240px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-content #map {
+  border-radius: 10px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.contact-content .item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.contact-content .item p {
+  overflow: hidden;
+  color: #0071f8;
+}
+
+.contact-content .item p b {
+  color: #07428a;
+}
+
+.contact-content .phone {
+  margin-left: 15px;
+}
+
+.contact-content .email {
+  margin-left: 15px;
+}
+
+.contact-content .item img {
+  float: left;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+
+.contact-content .item h6 {
+  font-size: 20px;
+  font-weight: 600;
+  vertical-align: middle;
+  color: #042144;
+}
+
+.contact-content .item h6 span {
+  font-size: 15px;
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+.contact-content #contact-form {
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+}
+
+.contact-content #contact-form label {
+  font-size: 15px;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+}
+
+.contact-content #contact-form input {
+  width: 100%;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.contact-content #contact-form textarea {
+  width: 100%;
+  height: 150px;
+  max-height: 180px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 40px;
+  font-size: 14px;
+  padding: 15px 15px;
+}
+
+.contact-content #contact-form button {
+  background-color: #1e1e1e;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0px 20px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .5s;
+}
+
+.contact-content #contact-form button:hover {
+  background-color: #07428a;
+}
+
+
+
+.query {
+  margin: 5rem 0;
+}
+
+@media screen and (max-width: 440px) {
+  iframe {
+    width: 395px;
+    height: 350px;
+    margin-top: 2rem;
+  }
+
+  .contact-img img {
+    width: 395px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  iframe {
+    width: 345px;
+    height: 350px;
+    margin-top: 1rem;
+  }
+
+  .contact-img img {
+    width: 345px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  iframe {
+    width: 290px;
+    height: 300px;
+  }
+
+  .contact-img img {
+    width: 290px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  iframe {
+    width: 680px;
+    height: 350px;
+
+  }
+
+  .contact-img img {
+    width: 680px;
+    height: 350px;
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  iframe {
+    width: 500px;
+    height: 350px;
+  }
+
+  .contact-img img {
+    width: 500px;
+    height: 350px;
+  }
+
+}
+
+@media screen and (min-width:1440px) {
+
+  iframe {
+    width: 580px;
+    height: 350px;
+  }
+
+  .contact-img img {
+    width: 580px;
+    height: 350px;
+  }
+
+}
+
+.query .query-heading .query-title {
+  margin: 3rem 0;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.query .query-contain h5 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.query .query-contain p {
+  color: #000;
+}
+
+.query .query-contain .office {
+  margin-top: 2rem;
+}
+
+.query .query-contain .office .icon1 {
+  width: 50px;
+  height: 50px;
+  background-color: #0102fa;
+  border-radius: 5px;
+  background-size: contain;
+  transition: .5s;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.query .query-contain .office .icon1 i {
+  transform: rotate(-45deg);
+  color: #fff;
+  font-size: 2rem;
+}
+
+.query .query-contain .office .icon-contain {
+  overflow: hidden;
+  padding-left: 2rem;
+}
+
+iframe {
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.507);
+  border-radius: 10px;
+}
+
+.form-floating {
+  margin-bottom: 2rem;
+}
+
+.query .query-contain .query-address {
+  margin-top: 5rem;
+}
+
+.contact-img img {
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.507);
+}
+
+/* modal popup */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content1 {
+  background-color: #0101fad3;
+  margin: 6% auto;
+  padding: 20px;
+  border: 1px solid #410dfa;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+@media screen and (max-width: 440px) {
+
+  .modal-content1 {
+    margin: 15% auto;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
+}
+
+.modal-content1 label {
+  color: #fff;
+}
+
+.modal-content1 input {
+  background-color: #ffffff2a;
+  color: #fff;
+}
+
+
+.modal-content1 select {
+  background-color: #ffffff2a;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.modal-content1 h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service-image1 img {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.548);
+}
